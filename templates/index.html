@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block pageContent %}
+<main class="px-4 mt-12">
+    <h1 class="font-bold text-center text-5xl">chat-NCBC</h1>
+
+    <div id="chatbot" class="relative overflow-y-scroll mt-8 rounded-lg p-10 h-72 max-w-4xl mx-auto border-2 border-black bg-slate-200">
+            <div class="mb-4 flex flex-col">
+              <div class="bg-gray-800 py-2 px-4 rounded-lg self-start text-white">
+                Hi! How may I help you?
+              </div>
+              <p class="text-xs text-gray-500 self-start mt-1">chatterBC</p>
+            </div>
+            <!-- Messages will be added here -->      
+    </div>
+
+    <div class="mt-8 w-4/5 text-center mx-auto">
+        <input type="text" id="textInput" name="userMessage" autofocus class="rounded w-3/5 px-4 py-3">
+        <input type="submit" value="Send" id="buttonInput" class="rounded px-2 py-1 bg-black text-base text-white hover:bg-gray-900">
+    </div>
+    
+</main>
+{% endblock pageContent %}
